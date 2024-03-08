@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="robots" content="index, follow" />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-9QMGG0T44L"
