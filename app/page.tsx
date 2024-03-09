@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/Header/Header";
-import cloudImg from "../public/cloud.png"
+import cloudImg from "../public/cloud.png";
 
 export default function Home() {
   return (
