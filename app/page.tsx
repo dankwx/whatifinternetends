@@ -15,7 +15,7 @@ export default function Home() {
           >Well, this is an unlikely scenario, but just as people like to stock up on groceries when there is news of wars and lockdowns, wouldn't it be nice to stock up on "digital groceries" on your computer?</p>
         </article>
         <div className="flex w-1/2 h-full">
-          <Image src={cloudImg} alt="ff" />
+          <Image className="h-52 w-52" src={cloudImg} alt="ff" />
         </div>
       </div>
     </main>
