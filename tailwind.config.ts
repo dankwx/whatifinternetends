@@ -14,11 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "main-color": "#d6e5e5",
-        "second-color": "#e54923",
+        "main-color": "#E6E6E6",
+        "second-color": "#297373",
+        "terciary-color": "#C2C2C2",
       },
       fontFamily: {
-        "main": ["Nunito", "sans-serif"]
+        "main": ["Inter", "sans-serif"]
       }
     },
   },
