@@ -70,13 +70,47 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full bg-slate-300 h-64 ml-4">
-            <h2
+          <div className="bg-slate-3s00 ml-4 h-64 w-full">
+            <div
               id="main"
               style={{ display: activeTab === "main" ? "flex" : "none" }}
+              className="flex-col"
             >
-              What we recommend
-            </h2>
+              <h2 className="text-lg font-extrabold mb-4">
+                Gear Up for the Offline Apocalypse
+              </h2>
+              <p>
+                Picture this: the internet, that glorious realm of memes and cat
+                videos, gone. No worries, mate – here's the lowdown on what you
+                need to do to keep your digital sanity intact.
+                <br />
+                <br />
+                First off, stash those digital treasures on an HDD, not an SSD.
+                Why? 'Cause HDDs are the cockroaches of storage – they last
+                forever. It's like choosing a rusty pickup truck over a shiny
+                sports car; practicality over flashiness.
+                <br />
+                <br />
+                Now, let's talk cash. In a post-internet world, your favorite
+                games and software could become the digital gold of the
+                apocalypse. Those who downloaded and stored locally? They're the
+                new kings of the digital realm. Expect prices to skyrocket for
+                those who didn't plan ahead. Be the wise one with the foresight
+                – it's like investing in Bitcoin before it went interstellar.{" "}
+                <br />
+                <br />
+                So, how do you prepare? Download like there's no tomorrow. Grab
+                those essential programs and games, toss 'em on your trusty HDD,
+                and pat yourself on the back for being a digital doomsday
+                prepper. Sure, it sounds a bit dramatic, but in the world of
+                Reddit and 4chan, drama is our middle name. <br />
+                <br />
+                In a nutshell, we're not saying the internet's going down
+                tomorrow, but we are saying: why not be the digital MacGyver
+                ready for anything? Prepping for the apocalypse, one downloaded
+                meme at a time. Stay savvy, internet warriors.
+              </p>
+            </div>
             <h2
               id="softwares"
               style={{ display: activeTab === "softwares" ? "flex" : "none" }}
