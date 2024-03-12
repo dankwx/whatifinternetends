@@ -70,7 +70,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full bg-slate-300">
+          <div className="w-full bg-slate-300 h-64 ml-4">
             <h2
               id="main"
               style={{ display: activeTab === "main" ? "flex" : "none" }}
