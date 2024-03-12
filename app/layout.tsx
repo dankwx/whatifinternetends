@@ -34,6 +34,7 @@ export default function RootLayout ({
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
           `}
         </Script>
+        <link rel='icon' href='./favicon.png' />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
