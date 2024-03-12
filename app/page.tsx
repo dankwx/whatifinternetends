@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <div className="flex w-full flex-1 flex-col items-center px-80 font-main">
         <article className="mb-16 flex h-fit w-full flex-col items-center">
-          <h2 className="mt-16 font-main text-2xl font-bold">
+          <h2 className="mt-16 font-titleFont text-2xl font-bold">
             antecipate your downloads
           </h2>
           <p className="mt-4 font-main leading-6">
@@ -76,10 +76,10 @@ export default function Home() {
               style={{ display: activeTab === "main" ? "flex" : "none" }}
               className="flex-col"
             >
-              <h2 className="text-lg font-extrabold mb-4">
+              <h2 className="font-titleFont mb-4 text-2xl font-extrabold">
                 Gear Up for the Offline Apocalypse
               </h2>
-              <p>
+              <p className="leading-6">
                 Picture this: the internet, that glorious realm of memes and cat
                 videos, gone. No worries, mate – here's the lowdown on what you
                 need to do to keep your digital sanity intact.

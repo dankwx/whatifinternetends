@@ -20,7 +20,8 @@ const config: Config = {
         'fourth-color': '#222E50'
       },
       fontFamily: {
-        main: ['Arial', 'Helvetica', 'sans-serif']
+        main: ['IBM Plex Sans', 'sans-serif'],
+        titleFont: ['PT Serif', 'serif']
       }
     }
   },
