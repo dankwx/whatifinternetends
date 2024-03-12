@@ -33,7 +33,7 @@ export default function Home() {
                 <ul>
                   <li
                     onClick={() => handleTabClick("main")}
-                    className={`w-32 cursor-pointer border-solid px-1 py-2 ${
+                    className={`w-32 cursor-pointer border-solid px-1 py-2 hover:text-terciary-color ${
                       activeTab === "main" && "font-bold text-terciary-color"
                     }`}
                   >
@@ -41,7 +41,7 @@ export default function Home() {
                   </li>
                   <li
                     onClick={() => handleTabClick("softwares")}
-                    className={`w-32 cursor-pointer border-y border-solid border-black px-1 py-2 ${
+                    className={`w-32 cursor-pointer border-y border-solid border-black px-1 py-2 hover:text-terciary-color ${
                       activeTab === "softwares" &&
                       "font-bold text-terciary-color"
                     }`}
@@ -50,7 +50,7 @@ export default function Home() {
                   </li>
                   <li
                     onClick={() => handleTabClick("entertainment")}
-                    className={`cursor-pointer px-1 py-2 ${
+                    className={`cursor-pointer px-1 py-2 hover:text-terciary-color ${
                       activeTab === "entertainment" &&
                       "font-bold text-terciary-color"
                     }`}
@@ -59,7 +59,7 @@ export default function Home() {
                   </li>
                   <li
                     onClick={() => handleTabClick("tutorials")}
-                    className={`cursor-pointer border-t border-solid border-black px-1 py-2 ${
+                    className={`cursor-pointer border-t border-solid border-black px-1 py-2 hover:text-terciary-color ${
                       activeTab === "tutorials" &&
                       "font-bold text-terciary-color"
                     }`}
