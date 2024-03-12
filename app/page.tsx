@@ -1,37 +1,46 @@
-import Image from 'next/image'
-import Header from '@/components/Header/Header'
-import Navbar from '@/components/Navbar/Navbar'
+import Header from "@/components/Header/Header";
+import Navbar from "@/components/Navbar/Navbar";
 
-export default function Home () {
+export default function Home() {
   return (
-    <main className='flex flex-col w-screen h-screen items-center bg-main-color'>
+    <main className="flex h-screen w-screen flex-col items-center bg-main-color">
       <Header />
       <Navbar />
-      <div className='flex flex-col w-full px-80 flex-1 font-main items-center'>
-        <article className='flex w-full h-fit flex-col items-center mb-16'>
-          <h2 className='font-bold font-main text-2xl mt-16'>
+      <div className="flex w-full flex-1 flex-col items-center px-80 font-main">
+        <article className="mb-16 flex h-fit w-full flex-col items-center">
+          <h2 className="mt-16 font-main text-2xl font-bold">
             antecipate your downloads
           </h2>
-          <p className='font-main mt-4 leading-6'>
+          <p className="mt-4 font-main leading-6">
             a collection of must have programs, guides and suggestions everyone
             must have on their computers and smartphones in case the internet
             went down
           </p>
         </article>
-        <section className='flex flex-col w-full border border-solid'>
-          <h2 className='w-full bg-second-color py-2 pl-2'>Collection</h2>
-          <div className='flex'>
-            <ul>
-              <li>teste 1</li>
-              <li>teste 2</li>
-            </ul>
-            <ul>
-              <li>teste 3</li>
-              <li>teste 4</li>
-            </ul>
+        <section className="flex w-full">
+          <div className="flex w-36 flex-col">
+            <div className="border-third-color bg-third-color border border-solid">
+              <h2 className="w-full cursor-pointer px-1 py-2">
+                What we recommend
+              </h2>
+              <div className="flex">
+                <ul>
+                  <li className="w-32 cursor-pointer border-y border-solid px-1 py-2">
+                    Softwares
+                  </li>
+                  <li className="cursor-pointer px-1 py-2">Entertainment</li>
+                  <li className="cursor-pointer border-t border-solid px-1 py-2">
+                    Tutorials
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="w-full bg-slate-600">
+            <h1>yteste</h1>
           </div>
         </section>
       </div>
     </main>
-  )
+  );
 }
