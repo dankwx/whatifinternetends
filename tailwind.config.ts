@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         'main-color': '#BCD8C1',
         'second-color': '#222E50',
-        'terciary-color': '#439A86'
+        'terciary-color': '#007991'
       },
       fontFamily: {
         main: ['Arial', 'Helvetica', 'sans-serif']
