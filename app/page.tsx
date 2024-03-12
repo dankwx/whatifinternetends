@@ -41,7 +41,7 @@ export default function Home() {
                   </li>
                   <li
                     onClick={() => handleTabClick("softwares")}
-                    className={`w-32 cursor-pointer border-y border-solid px-1 py-2 ${
+                    className={`w-32 cursor-pointer border-y border-solid border-black px-1 py-2 ${
                       activeTab === "softwares" &&
                       "font-bold text-terciary-color"
                     }`}
@@ -59,7 +59,7 @@ export default function Home() {
                   </li>
                   <li
                     onClick={() => handleTabClick("tutorials")}
-                    className={`cursor-pointer border-t border-solid px-1 py-2 ${
+                    className={`cursor-pointer border-t border-solid border-black px-1 py-2 ${
                       activeTab === "tutorials" &&
                       "font-bold text-terciary-color"
                     }`}
