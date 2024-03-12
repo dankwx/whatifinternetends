@@ -1,7 +1,16 @@
+"use client";
+
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
+import { SetStateAction, useState } from "react";
 
 export default function Home() {
+  const [activeTab, setActiveTab] = useState("main");
+
+  const handleTabClick = (tabId: SetStateAction<string>) => {
+    setActiveTab(tabId);
+  };
+
   return (
     <main className="flex h-screen w-screen flex-col items-center bg-main-color">
       <Header />
@@ -12,7 +21,7 @@ export default function Home() {
             antecipate your downloads
           </h2>
           <p className="mt-4 font-main leading-6">
-            a collection of must have programs, guides and suggestions everyone
+            a collection of must-have programs, guides, and suggestions everyone
             must have on their computers and smartphones in case the internet
             went down
           </p>
@@ -20,24 +29,74 @@ export default function Home() {
         <section className="flex w-full">
           <div className="flex w-36 flex-col">
             <div className="border-third-color bg-third-color border border-solid">
-              <h2 className="w-full cursor-pointer px-1 py-2">
-                What we recommend
-              </h2>
               <div className="flex">
                 <ul>
-                  <li className="w-32 cursor-pointer border-y border-solid px-1 py-2">
+                  <li
+                    onClick={() => handleTabClick("main")}
+                    className={`w-32 cursor-pointer border-solid px-1 py-2 ${
+                      activeTab === "main" && "font-bold text-terciary-color"
+                    }`}
+                  >
+                    What we recommend
+                  </li>
+                  <li
+                    onClick={() => handleTabClick("softwares")}
+                    className={`w-32 cursor-pointer border-y border-solid px-1 py-2 ${
+                      activeTab === "softwares" &&
+                      "font-bold text-terciary-color"
+                    }`}
+                  >
                     Softwares
                   </li>
-                  <li className="cursor-pointer px-1 py-2">Entertainment</li>
-                  <li className="cursor-pointer border-t border-solid px-1 py-2">
+                  <li
+                    onClick={() => handleTabClick("entertainment")}
+                    className={`cursor-pointer px-1 py-2 ${
+                      activeTab === "entertainment" &&
+                      "font-bold text-terciary-color"
+                    }`}
+                  >
+                    Entertainment
+                  </li>
+                  <li
+                    onClick={() => handleTabClick("tutorials")}
+                    className={`cursor-pointer border-t border-solid px-1 py-2 ${
+                      activeTab === "tutorials" &&
+                      "font-bold text-terciary-color"
+                    }`}
+                  >
                     Tutorials
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="w-full bg-slate-600">
-            <h1>yteste</h1>
+          <div className="w-full bg-slate-300">
+            <h2
+              id="main"
+              style={{ display: activeTab === "main" ? "flex" : "none" }}
+            >
+              What we recommend
+            </h2>
+            <h2
+              id="softwares"
+              style={{ display: activeTab === "softwares" ? "flex" : "none" }}
+            >
+              Softwares
+            </h2>
+            <h2
+              id="entertainment"
+              style={{
+                display: activeTab === "entertainment" ? "flex" : "none",
+              }}
+            >
+              Entertainment
+            </h2>
+            <h2
+              id="tutorials"
+              style={{ display: activeTab === "tutorials" ? "flex" : "none" }}
+            >
+              Tutorials
+            </h2>
           </div>
         </section>
       </div>
