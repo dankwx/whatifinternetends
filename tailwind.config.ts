@@ -19,7 +19,7 @@ const config: Config = {
         "terciary-color": "#C2C2C2",
       },
       fontFamily: {
-        "main": ["Inter", "sans-serif"]
+        "main": ["Arial", "sans-serif"]
       }
     },
   },
