@@ -2,6 +2,7 @@
 
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
+import SoftwareList from "@/components/SoftwaresList/SoftwareList";
 import { SetStateAction, useState } from "react";
 
 export default function Home() {
@@ -17,14 +18,37 @@ export default function Home() {
       <Navbar />
       <div className="flex w-full flex-1 flex-col items-center px-80 font-main">
         <article className="mb-16 flex h-fit w-full flex-col items-center">
-          <h2 className="font-titleFont mt-16 text-2xl font-bold">
+          {/* <h2
+            id="main"
+            style={{ display: activeTab === "main" ? "flex" : "none" }}
+            className="mt-16 font-titleFont text-2xl font-bold"
+          >
             antecipate your downloads
           </h2>
-          <p className="mt-4 font-main leading-6">
+          <h2
+            id="softwares"
+            style={{ display: activeTab === "softwares" ? "flex" : "none" }}
+            className="mt-16 font-titleFont text-2xl font-bold"
+          >
+            softwares
+          </h2>
+          <p
+            id="main"
+            style={{ display: activeTab === "main" ? "flex" : "none" }}
+            className="mt-4 font-main leading-6"
+          >
             a collection of must-have programs, guides, and suggestions everyone
             must have on their computers and smartphones in case the internet
             went down
           </p>
+          <p
+            id="softwares"
+            style={{ display: activeTab === "softwares" ? "flex" : "none" }}
+            className="mt-4 font-main leading-6"
+          >
+            a collection of suggested softwares you want to have installed in
+            yoour pc
+          </p> */}
         </article>
         <section className="flex w-full">
           <div className="flex w-36 flex-col">
@@ -76,7 +100,7 @@ export default function Home() {
               style={{ display: activeTab === "main" ? "flex" : "none" }}
               className="flex-col"
             >
-              <h2 className="font-titleFont mb-4 text-2xl font-extrabold">
+              <h2 className="mb-4 font-titleFont text-2xl font-extrabold">
                 Gear Up for the Offline Apocalypse
               </h2>
               <p className="leading-6">
@@ -110,7 +134,7 @@ export default function Home() {
                 ready for anything? Prepping for the apocalypse, one downloaded
                 meme at a time. Stay savvy, internet warriors.
               </p>
-              <h2 className="font-titleFont my-4 text-2xl font-extrabold">
+              <h2 className="my-4 font-titleFont text-2xl font-extrabold">
                 Optimizing Your Digital Arsenal: Beyond the Download
               </h2>
               <ul>
@@ -146,12 +170,16 @@ export default function Home() {
                 </p>
               </ul>
             </div>
-            <h2
+            <div
+              className="flex-col"
               id="softwares"
               style={{ display: activeTab === "softwares" ? "flex" : "none" }}
             >
-              Softwares
-            </h2>
+              <h2 className="mb-4 font-titleFont text-2xl font-extrabold">
+                Softwares List
+              </h2>
+              <SoftwareList />
+            </div>
             <h2
               id="entertainment"
               style={{
