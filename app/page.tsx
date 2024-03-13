@@ -12,7 +12,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex h-screen w-screen flex-col items-center bg-main-color">
+    <main className="flex h-screen w-screen flex-col items-center overflow-auto bg-main-color">
       <Header />
       <Navbar />
       <div className="flex w-full flex-1 flex-col items-center px-80 font-main">
@@ -117,17 +117,33 @@ export default function Home() {
                 <li className="mb-2 font-main text-xl font-semibold">
                   Data Compression Magic
                 </li>
-                <p>
+                <p className="leading-6">
                   Once you've amassed your trove of essential programs, consider
                   compressing them to save space. Utilize reliable compression
                   tools like 7-Zip or WinRAR. These tools not only reduce file
                   sizes but also make the transfer and storage of your digital
                   arsenal more streamlined.
                 </p>
-                <li className="mb-2 font-main text-xl font-semibold">
+                <li className="my-2 font-main text-xl font-semibold">
                   Organize Like a Pro
                 </li>
-                <p></p>
+                <p className="leading-6">
+                  A cluttered digital space is the enemy of efficiency. Take the
+                  time to organize your downloaded files logically. Create
+                  folders for different categories, making it easy to locate
+                  specific programs or documents when you need them. A
+                  well-organized structure will save you time and frustration
+                  down the line.
+                </p>
+                <li className="my-2 font-main text-xl font-semibold">
+                  Stay Informed
+                </li>
+                <p className="leading-6">
+                  The digital landscape is ever-evolving. Regularly check for
+                  updates to your stored programs and backup strategies. Being
+                  proactive in staying informed ensures that your offline setup
+                  remains resilient against potential vulnerabilities.
+                </p>
               </ul>
             </div>
             <h2
