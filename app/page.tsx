@@ -12,7 +12,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex h-screen w-screen flex-col items-center overflow-auto bg-main-color">
+    <main className="flex h-screen w-screen flex-col items-center overflow-y-scroll bg-main-color">
       <Header />
       <Navbar />
       <div className="flex w-full flex-1 flex-col items-center px-80 font-main">
