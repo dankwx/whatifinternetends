@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <div className="flex w-full flex-1 flex-col items-center px-80 font-main">
         <article className="mb-16 flex h-fit w-full flex-col items-center">
-          <h2 className="mt-16 font-titleFont text-2xl font-bold">
+          <h2 className="font-titleFont mt-16 text-2xl font-bold">
             antecipate your downloads
           </h2>
           <p className="mt-4 font-main leading-6">
@@ -110,6 +110,25 @@ export default function Home() {
                 ready for anything? Prepping for the apocalypse, one downloaded
                 meme at a time. Stay savvy, internet warriors.
               </p>
+              <h2 className="font-titleFont my-4 text-2xl font-extrabold">
+                Optimizing Your Digital Arsenal: Beyond the Download
+              </h2>
+              <ul>
+                <li className="mb-2 font-main text-xl font-semibold">
+                  Data Compression Magic
+                </li>
+                <p>
+                  Once you've amassed your trove of essential programs, consider
+                  compressing them to save space. Utilize reliable compression
+                  tools like 7-Zip or WinRAR. These tools not only reduce file
+                  sizes but also make the transfer and storage of your digital
+                  arsenal more streamlined.
+                </p>
+                <li className="mb-2 font-main text-xl font-semibold">
+                  Organize Like a Pro
+                </li>
+                <p></p>
+              </ul>
             </div>
             <h2
               id="softwares"
