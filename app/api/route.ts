@@ -20,8 +20,8 @@ async function addNewUser() {
   
   // Dados do usuário a serem adicionados
   const userData = {
-    user: 'user',
-    age: 18
+    user: 'user2',
+    age: 19
   };
 
   // Adicionando o documento com os dados do usuário à coleção 'users'
