@@ -1,6 +1,6 @@
 // app/api/route.ts
 import { NextResponse } from 'next/server';
-import { db } from '../../firebaseConfig'
+import { db } from '../../../firebaseConfig'
 import { collection, addDoc } from 'firebase/firestore';
 
 export async function GET() {
