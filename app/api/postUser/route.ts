@@ -20,6 +20,7 @@ async function addNewUser() {
   
   // Dados do usuário a serem adicionados
   const userData = {
+    id: 1,
     user: 'user2',
     age: 19
   };
