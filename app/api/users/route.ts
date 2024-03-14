@@ -3,10 +3,10 @@ import { NextResponse } from 'next/server';
 import { db } from '../../../firebaseConfig'; // Importando a instância do Firestore
 import { DocumentData, collection, getDocs } from 'firebase/firestore'; // Importando funções necessárias
 
-export async function GET() {
+export async function GET(request: Request, context: any) {
   try {
     // Obtendo todos os usuários da coleção
-    const users = await getAllUsers();
+    const users = await getAllUsers(request, context);
     return NextResponse.json(users);
   } catch (error) {
     console.error('Erro ao obter usuários:', error);
@@ -14,7 +14,7 @@ export async function GET() {
   }
 }
 
-async function getAllUsers() {
+async function getAllUsers(request: Request, context: any) {
   // Referência para a coleção 'users' no Firestore
   const usersCollection = collection(db, 'users');
   
