@@ -51,6 +51,10 @@ export default function SoftwareList() {
         <a href="https://www.codeblocks.org/">https://www.codeblocks.org/</a> -
         Descrição curta do Link 3
       </li>
+      <li>
+        <a href="https://www.codeblocks.org/">https://notepad-plus-plus.org/downloads/</a> -
+        Descrição curta do Link 3
+      </li>
     </ul>
   );
 }
