@@ -1,3 +1,3 @@
 ## What if Internet Ends Website
 
-updates comning 2025
+updates coming 2025
