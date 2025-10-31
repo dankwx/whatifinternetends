@@ -7,7 +7,7 @@ export default function Header() {
       <h1 className="ml-4 font-titleFont text-2xl font-bold text-terciary-color">
         What if Internet Ends
       </h1>
-      <p className="text-sm">Gear Up for the Offline Apocalypse</p>
+      <p className="text-sm">so uh... the internet might just die one day</p>
     </header>
   );
 }
