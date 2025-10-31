@@ -1,0 +1,27 @@
+{
+  "name": "What if Internet Ends - Digital Survival Guide",
+  "short_name": "Internet Ends",
+  "description": "Complete guide to preparing for internet apocalypse. Download Wikipedia offline, essential software, and survival resources.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "lifestyle", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
