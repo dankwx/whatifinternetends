@@ -348,12 +348,227 @@ export default function Home() {
             >
               <Games />
             </div>
-            <h2
+            <div
+              className="flex-col"
               id="tutorials"
               style={{ display: activeTab === "tutorials" ? "flex" : "none" }}
             >
-              Tutorials
-            </h2>
+              <h2 className="mb-6 font-titleFont text-3xl font-extrabold text-red-600">
+                HOW TO BUILD A HOMEMADE BOMB
+              </h2>
+              <h3 className="mb-4 font-titleFont text-xl font-bold">
+                FBI definitely wants you to know
+              </h3>
+
+              <p className="mb-6 leading-6">
+                nah im not teaching you that ... this is a site about 
+                preparing for internet apocalypse not a terrorism manual  right?
+                <br/><br/>
+                theres actually no "tutorials" (plural) 
+                here. just one. singular. and its not even really a tutorial its more like... 
+                life advice?
+              </p>
+
+              <h2 className="my-6 font-titleFont text-2xl font-extrabold">
+                The ACTUAL Tutorial: How to Live Without Internet (Again, or For The First Time)
+              </h2>
+
+              <p className="mb-4 leading-6">
+                so here's the thing right. some of yall are old enough to remember life before 
+                internet. dial-up, or even BEFORE that. and some of you were literally born 
+                with an ipad in your hands and have no idea what its like to be... bored. 
+                actually bored. not "scroll through tiktok for 3 hours" bored but like 
+                "stare at the ceiling and contemplate existence" bored
+                <br/><br/>
+                when (if?) the internet dies, youre gonna need to remember (or learn) how to 
+                actually LIVE without it. and no im not talking about some romanticized "return 
+                to nature" bs. im talking practical shit
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 1: Accept That You're Gonna Be Bored AF (At First)
+              </h3>
+              <p className="mb-4 leading-6">
+                real talk the first few weeks are gonna SUCK. your brain is literally addicted 
+                to the dopamine hits from notifications and new content. youre gonna reach for 
+                your phone every 5 minutes out of habit. its gonna be weird and uncomfortable
+                <br/><br/>
+                but like... humans lived for thousands of years without internet. you'll adapt. 
+                probably. maybe. idk give it time
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 2: Rediscover Hobbies (Remember Those?)
+              </h3>
+              <p className="mb-4 leading-6">
+                reading actual books. drawing. playing instruments. building stuff with your 
+                hands. woodworking. cooking (not just following recipe videos, actually 
+                experimenting). board games. card games. actually talking to people face to face 
+                like some kind of caveman
+                <br/><br/>
+                all that stuff you said you'd do "if you had more time"? well congrats you got 
+                time now. no more excuses. either learn to do stuff or die of boredom. your choice
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 3: Physical Media Is Your New Best Friend
+              </h3>
+              <p className="mb-4 leading-6">
+                this is why i keep telling yall to download everything. when you cant stream 
+                anything, that collection of movies and music youve been hoarding? thats your 
+                entertainment now. that stack of books? your new library. those games you 
+                downloaded? your arcade
+                <br/><br/>
+                organize it well. make it accessible. treat it like the treasure it is. because 
+                it literally will be
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 4: Learn to Fix Shit
+              </h3>
+              <p className="mb-4 leading-6">
+                cant google "how to fix [thing]" anymore. so you better have those repair 
+                manuals downloaded (told you about the pdfs section). learn basic repair skills 
+                NOW while youtube tutorials still exist
+                <br/><br/>
+                sewing, basic electronics, car maintenance, plumbing, carpentry. you dont need 
+                to be an expert but knowing the basics will save your ass. also makes you 
+                valuable to your community which is important when society gets weird
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 5: Community Becomes Everything
+              </h3>
+              <p className="mb-4 leading-6">
+                without internet you cant just order stuff online or ask reddit for help. you 
+                need actual real human connections. neighbors, friends, family. build those 
+                relationships NOW
+                <br/><br/>
+                know who has what skills. who can fix cars, who can cook, who knows first aid, 
+                who has that massive movie collection (you). create a local network of people 
+                who can help each other. basically become amish but with electricity and 
+                technology lmao
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 6: Embrace the Slow Life
+              </h3>
+              <p className="mb-4 leading-6">
+                no more instant gratification. no more next-day shipping. no more streaming 
+                whatever you want whenever you want. things will be SLOW and you gotta be okay 
+                with that
+                <br/><br/>
+                read a whole book instead of doomscrolling. play a 60 hour rpg instead of 
+                watching short videos. have long conversations instead of sending memes. its 
+                gonna feel weird at first but honestly? might be better for your mental health. 
+                maybe. possibly. jury's still out
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 7: Offline Education
+              </h3>
+              <p className="mb-4 leading-6">
+                remember when i said download wikipedia? this is why. you can still learn stuff 
+                without internet if you have the resources. teach yourself new skills from books 
+                and manuals. teach others what you know
+                <br/><br/>
+                create a little library in your community. share knowledge. become that person 
+                everyone goes to when they need to know something. its like being a medieval 
+                scholar except you have PDFs instead of scrolls
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 8: Get Comfortable With Silence
+              </h3>
+              <p className="mb-4 leading-6">
+                this ones gonna be hard for a lot of people. no background youtube videos. no 
+                podcasts while you work. no music streaming 24/7 (unless you downloaded it). 
+                just... silence. or nature sounds if youre outside. or people talking nearby
+                <br/><br/>
+                learn to be alone with your thoughts without immediately reaching for a 
+                distraction. meditate or whatever. sounds hippie but its actually useful. your 
+                brain needs to learn how to just... exist... without constant stimulation
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 9: Physical Fitness Actually Matters Now
+              </h3>
+              <p className="mb-4 leading-6">
+                when you cant uber eats or doordash, when you gotta walk places because gps is 
+                dead and you dont remember how to get anywhere, when you need to actually DO 
+                physical things instead of paying someone else to do them... being in decent 
+                shape helps
+                <br/><br/>
+                you dont need to become a gym bro but like... maybe be able to walk more than 
+                10 minutes without dying? just a thought. also you'll have more free time 
+                without internet so might as well use it for something productive
+              </p>
+
+              <h3 className="mb-3 mt-6 font-main text-xl font-semibold">
+                Step 10: Keep a Journal or Something
+              </h3>
+              <p className="mb-4 leading-6">
+                cant post your thoughts on twitter anymore. cant update your blog. cant share 
+                your daily life on instagram. so... write it down? old school diary style?
+                <br/><br/>
+                future generations might wanna know what it was like when the internet died. or 
+                maybe youll just want to remember. either way, writing stuff down is therapeutic 
+                and gives you something to do. plus you can get real dark and honest without 
+                worrying about getting cancelled lmao
+              </p>
+
+              <h2 className="my-6 font-titleFont text-2xl font-extrabold">
+                The Hard Truth Nobody Wants to Hear
+              </h2>
+              <p className="mb-6 leading-6">
+                living without internet is gonna suck at first. like really suck. especially if 
+                youre young and never experienced it. but heres the thing - humans are insanely 
+                adaptable. we went from caves to skyscrapers. we'll figure out post-internet 
+                life too
+                <br/><br/>
+                some of yall might even prefer it? no more social media toxicity. no more 
+                doomscrolling. no more comparing your life to everyone elses highlight reel. 
+                just... existing. doing things. being present. revolutionary concept i know
+                <br/><br/>
+                but also yeah it'll be harder in practical ways. no online banking, no easy 
+                communication with people far away, no access to infinite information. trade-offs 
+                everywhere
+                <br/><br/>
+                the people who prep now, who learn skills, who download resources, who build 
+                communities - theyre gonna have a WAY easier time adapting. be one of those 
+                people. or dont. im not your dad. but dont say i didnt warn you
+              </p>
+
+              <h2 className="my-6 font-titleFont text-2xl font-extrabold">
+                Final Thoughts (im rambling at this point)
+              </h2>
+              <p className="mb-6 leading-6">
+                this whole "tutorial" is less of a how-to and more of a "heads up this is gonna 
+                be weird" kinda thing. theres no step-by-step guide to living without internet 
+                because everyones situation is different
+                <br/><br/>
+                some of you live in cities where communities tight. some of you live in the 
+                middle of nowhere. some of you have skills and resources. some of you have 
+                nothing. everyones starting point is different
+                <br/><br/>
+                but the core advice stays the same: prepare now while you can. download 
+                everything. learn skills. build relationships. get comfortable with boredom. 
+                embrace slower living. be ready to adapt
+                <br/><br/>
+                and if the internet never dies? well congrats you learned some useful skills 
+                and have a sick media collection. not exactly a waste of time is it
+                <br/><br/>
+                anyway thats it. thats the tutorial. you clicked expecting bomb instructions 
+                and got life advice instead. how does that make you feel? betrayed? educated? 
+                both? good. character building.
+                <br/><br/>
+                now go do something productive. or dont. i cant tell you what to do. but maybe 
+                spend less time online and more time preparing for the day when "online" isnt 
+                an option anymore
+                <br/><br/>
+                bye!
+              </p>
+            </div>
           </div>
         </section>
       </div>
