@@ -3,6 +3,7 @@
 import Header from "@/components/Header/Header";
 import Navbar from "@/components/Navbar/Navbar";
 import SoftwareList from "@/components/SoftwaresList/SoftwareList";
+import Games from "@/components/Games/Games";
 import { SetStateAction, useState } from "react";
 
 export default function Home() {
@@ -338,14 +339,15 @@ export default function Home() {
               </h2>
               <SoftwareList />
             </div>
-            <h2
+            <div
+              className="flex-col"
               id="entertainment"
               style={{
                 display: activeTab === "entertainment" ? "flex" : "none",
               }}
             >
-              Entertainment
-            </h2>
+              <Games />
+            </div>
             <h2
               id="tutorials"
               style={{ display: activeTab === "tutorials" ? "flex" : "none" }}
