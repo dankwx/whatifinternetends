@@ -1,0 +1,269 @@
+.drawing-container {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.drawing-header {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: white;
+  padding: 0.6rem 1rem;
+  border-bottom: 2px solid #000000;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.drawing-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.drawing-body {
+  background: #d4d0c8;
+  border: 3px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.drawing-description {
+  margin-bottom: 1.5rem;
+  color: #000000;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* CONTROLS */
+.drawing-controls {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.control-section {
+  margin-bottom: 1rem;
+}
+
+.control-section:last-child {
+  margin-bottom: 0;
+}
+
+.control-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+/* TOOL BUTTONS */
+.tool-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tool-btn {
+  background: #c0c0c0;
+  border: 3px solid;
+  border-color: #ffffff #606060 #606060 #ffffff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+
+.tool-btn:hover {
+  background: #d0d0d0;
+  border-color: #ffffff #505050 #505050 #ffffff;
+}
+
+.tool-btn:active,
+.tool-btn.active {
+  border-color: #606060 #ffffff #ffffff #606060;
+  background: #a0a0a0;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* SIZE SLIDER */
+.size-slider {
+  width: 100%;
+  height: 8px;
+  background: #808080;
+  border: 2px solid;
+  border-color: #404040 #e0e0e0 #e0e0e0 #404040;
+  outline: none;
+  cursor: pointer;
+}
+
+.size-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #606060 #606060 #ffffff;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.size-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #606060 #606060 #ffffff;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* COLOR PALETTE */
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  gap: 4px;
+  margin-bottom: 0.5rem;
+  padding: 8px;
+  background: #808080;
+  border: 2px solid;
+  border-color: #404040 #e0e0e0 #e0e0e0 #404040;
+  width: fit-content;
+}
+
+.color-btn {
+  width: 35px;
+  height: 35px;
+  border: 3px solid;
+  border-color: #ffffff #606060 #606060 #ffffff;
+  cursor: pointer;
+  transition: all 0.1s;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.color-btn:hover {
+  border-color: #ffffff #404040 #404040 #ffffff;
+  transform: scale(1.05);
+}
+
+.color-btn.selected {
+  border: 4px solid #ff0000;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #000000;
+}
+
+.custom-color-picker {
+  width: 100px;
+  height: 35px;
+  border: 3px solid;
+  border-color: #606060 #ffffff #ffffff #606060;
+  cursor: pointer;
+  background: #c0c0c0;
+}
+
+/* CANVAS */
+.canvas-wrapper {
+  background: #808080;
+  border: 3px solid;
+  border-color: #404040 #e0e0e0 #e0e0e0 #404040;
+  padding: 4px;
+  margin: 1rem 0;
+  width: fit-content;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.drawing-canvas {
+  display: block;
+  background: #ffffff;
+  border: 2px solid #000000;
+  cursor: crosshair;
+}
+
+/* ACTION BUTTONS */
+.drawing-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.action-btn {
+  background: #c0c0c0;
+  color: #000000;
+  border: 3px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.action-btn:hover {
+  background: #d0d0d0;
+  border-color: #ffffff #606060 #606060 #ffffff;
+}
+
+.action-btn:active {
+  border-color: #808080 #ffffff #ffffff #808080;
+  background: #a0a0a0;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.clear-btn {
+  background: #ff8080;
+  border-color: #ffb0b0 #c06060 #c06060 #ffb0b0;
+}
+
+.clear-btn:hover {
+  background: #ff9090;
+}
+
+.save-btn {
+  background: #80ff80;
+  border-color: #b0ffb0 #60c060 #60c060 #b0ffb0;
+}
+
+.save-btn:hover {
+  background: #90ff90;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .drawing-canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .canvas-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .color-palette {
+    grid-template-columns: repeat(5, 35px);
+  }
+
+  .drawing-body {
+    padding: 1rem;
+  }
+
+  .drawing-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+}

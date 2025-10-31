@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Wordle from "./Wordle";
+import DrawingGame from "./DrawingGame";
 import "./games.css";
 
 export default function Games() {
@@ -19,6 +21,18 @@ export default function Games() {
       </p>
 
       <div className="games-grid">
+        <button
+          className={`game-selector ${activeGame === "wordle" ? "active" : ""}`}
+          onClick={() => setActiveGame(activeGame === "wordle" ? null : "wordle")}
+        >
+          📝 Wordle
+        </button>
+        <button
+          className={`game-selector ${activeGame === "drawing" ? "active" : ""}`}
+          onClick={() => setActiveGame(activeGame === "drawing" ? null : "drawing")}
+        >
+          🎨 Paint
+        </button>
         <button
           className={`game-selector ${activeGame === "tictactoe" ? "active" : ""}`}
           onClick={() => setActiveGame(activeGame === "tictactoe" ? null : "tictactoe")}
@@ -45,6 +59,8 @@ export default function Games() {
         </button>
       </div>
 
+      {activeGame === "wordle" && <Wordle />}
+      {activeGame === "drawing" && <DrawingGame />}
       {activeGame === "tictactoe" && <TicTacToe />}
       {activeGame === "snake" && <Snake />}
       {activeGame === "memory" && <MemoryGame />}
